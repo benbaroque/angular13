@@ -1,7 +1,3 @@
-<h2>Parent component</h2>
-<a routerLink="/">Main</a> |
-<a routerLink="/other">Other</a> |
-<a routerLink="/user">User component</a>
-
-<app-other [name]="parentName" (changedNameEvent)="onResponse($event)"></app-other>
-<router-outlet></router-outlet>
+<app-like [countLike]="countLike" (changedLike)="onLike($event)"></app-like>
+&nbsp;
+<app-dislike [countDisLike]="countDisLike" (changedDisLike)="onDislike($event)"></app-dislike>

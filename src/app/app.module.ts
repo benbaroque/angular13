@@ -10,6 +10,8 @@ import { NewpipePipe } from './newpipe.pipe';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { AuthenGuard } from './authen.guard';
+import { LikeComponent } from './like/like.component';
+import { DislikeComponent } from './dislike/dislike.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { AuthenGuard } from './authen.guard';
     OtherComponent,
     NewpipePipe,
     UserComponent,
-    LoginComponent
+    LoginComponent,
+    LikeComponent,
+    DislikeComponent
   ],
   imports: [
     BrowserModule,

@@ -9,8 +9,13 @@ import { User } from './models/user';
 export class AppComponent {
   parentName: User = { id: 1, name: "BEN" }
   // parentName = new User(1,"Ben");
+  countLike = 100;
+  countDisLike = 25;
 
-  onResponse(event: User): void {
-    console.table(event);
+  onLike(event: any): void {
+    this.countLike = event;
+  }
+  onDislike(event: any): void {
+    this.countDisLike = event;
   }
 }
