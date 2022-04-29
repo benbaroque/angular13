@@ -5,11 +5,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OtherComponent } from './other/other.component';
+import { NewpipePipe } from './newpipe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OtherComponent
+    OtherComponent,
+    NewpipePipe
   ],
   imports: [
     BrowserModule,
