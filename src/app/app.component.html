@@ -1,4 +1,4 @@
 <h2>Hello</h2>
-Name : <input type="text" #myname (input)="doSomeThing(myname.value)" />
+Name : <input type="text" [value]="name" #myname (input)="doSomeThing(myname.value)" />
 <p>Please enter your name</p>
 <p>Hi, {{name}}</p>
