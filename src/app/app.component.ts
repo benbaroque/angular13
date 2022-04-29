@@ -7,8 +7,8 @@ import { User } from './models/user';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // parentName = { id: 1, value: "BEN" }
-  parentName = new User(1,"Ben");
+  parentName: User = { id: 1, name: "BEN" }
+  // parentName = new User(1,"Ben");
 
   onResponse(event: User): void {
     console.table(event);
