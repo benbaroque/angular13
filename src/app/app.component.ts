@@ -8,7 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name = '12';
 
-  doSomeThing(newName: string){
+  datas = [
+    { id: 1, name: "bhattarayudh" },
+    { id: 2, name: "ben" }
+  ];
+
+
+  doSomeThing(newName: string) {
     this.name = newName;
   }
 }

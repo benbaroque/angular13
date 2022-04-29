@@ -10,3 +10,6 @@ Name : (2-way binding) : <input type="text" [ngModel]="name" (ngModelChange)="na
 <!-- another ngIf else block-->
 <p *ngIf="name; else shwoDefaultMessage">Hi, {{name}}</p>
 <ng-template #shwoDefaultMessage>Please enter your name</ng-template>
+
+<H3>Use NgFor</H3>
+<div *ngFor="let d of datas">{{d.id}} => {{d.name}}</div>
