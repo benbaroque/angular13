@@ -2,5 +2,7 @@
 Name : <input type="text" [value]="name" #myname (input)="doSomeThing(myname.value)" />
 <br>
 Name : (2-way binding) : <input type="text" [(ngModel)]="name" />
+<br>
+Name : (2-way binding) : <input type="text" [ngModel]="name" (ngModelChange)="name=$event" />
 <p>Please enter your name</p>
 <p>Hi, {{name}}</p>
