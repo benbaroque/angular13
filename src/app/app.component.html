@@ -1,15 +1,3 @@
-<h2>Hello</h2>
-Name : <input type="text" [value]="name" #myname (input)="doSomeThing(myname.value)" />
-<br>
-Name : (2-way binding) : <input type="text" [(ngModel)]="name" />
-<br>
-<!-- another 2-way binding -->
-Name : (2-way binding) : <input type="text" [ngModel]="name" (ngModelChange)="name=$event" />
-<p *ngIf="!name">Please enter your name</p>
-<p *ngIf="name">Hi, {{name | newpipe}}</p>
-<!-- another ngIf else block-->
-<p *ngIf="name; else shwoDefaultMessage">Hi, {{name}}</p>
-<ng-template #shwoDefaultMessage>Please enter your name</ng-template>
+<h2>Parent component</h2>
 
-<H3>Use NgFor</H3>
-<div *ngFor="let d of datas">{{d.id}} => {{d.name}}</div>
+<app-other [name]="parentName"></app-other>
