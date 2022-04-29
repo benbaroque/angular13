@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  parentName = {id : 1, value: "BEN"}
+  parentName = { id: 1, value: "BEN" }
+
+  onResponse(event: any): void {
+    console.table(event);
+  }
 }
