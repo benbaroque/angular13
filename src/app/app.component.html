@@ -6,7 +6,7 @@ Name : (2-way binding) : <input type="text" [(ngModel)]="name" />
 <!-- another 2-way binding -->
 Name : (2-way binding) : <input type="text" [ngModel]="name" (ngModelChange)="name=$event" />
 <p *ngIf="!name">Please enter your name</p>
-<p *ngIf="name">Hi, {{name}}</p>
+<p *ngIf="name">Hi, {{name | uppercase}}</p>
 <!-- another ngIf else block-->
 <p *ngIf="name; else shwoDefaultMessage">Hi, {{name}}</p>
 <ng-template #shwoDefaultMessage>Please enter your name</ng-template>
