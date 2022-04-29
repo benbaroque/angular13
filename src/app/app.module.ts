@@ -8,13 +8,16 @@ import { AppComponent } from './app.component';
 import { OtherComponent } from './other/other.component';
 import { NewpipePipe } from './newpipe.pipe';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
+import { AuthenGuard } from './authen.guard';
 
 @NgModule({
   declarations: [
     AppComponent,
     OtherComponent,
     NewpipePipe,
-    UserComponent
+    UserComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
